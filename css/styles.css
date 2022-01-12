@@ -22,7 +22,7 @@ body {
   background: var(--color-body);
   display: flex;
   font-family: gilroy, "Open Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   height: 100vh;
 }
 
@@ -103,4 +103,48 @@ h3 {
   h3 {
     font-size: 1.85rem;
   }
-} ;
+}
+
+/* ---------------------------------- Links --------------------------------- */
+a {
+  text-decoration: none;
+}
+
+/* --------------------------------- Badges --------------------------------- */
+
+/* ---------------------------------- Lists --------------------------------- */
+.list {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  list-style: none;
+  padding-left: 0;
+}
+
+.list .list__item {
+  margin-right: 3rem;
+}
+
+.list__image.list__item::before {
+  content: "\2013\2013";
+  font-weight: bold;
+  letter-spacing: -0.2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 874px) {
+  .list {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .list {
+    -moz-column-count: auto;
+    -webkit-column-count: auto;
+    column-count: auto;
+  }
+}
