@@ -1,3 +1,106 @@
-body {
-  background: gold;
+@import "./normalize.css";
+:root {
+  --color-primary: #ff1e41;
+  --color-secondary: #ce334a;
+  --color-accent: #ff5a1e;
+  --color-headings: #000;
+  --color-body: #fff;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* ------------------------------- Typography ------------------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-body);
+  display: flex;
+  font-family: gilroy, "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+}
+
+h1 {
+  font-size: 10rem;
+  line-height: 0.85;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.section-dates {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0.7rem auto;
+}
+
+.section-description {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 874px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.85rem;
+  }
+  h2 {
+    transform: rotate(0deg);
+    writing-mode: inherit;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 2rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 1.85rem;
+  }
+} ;
