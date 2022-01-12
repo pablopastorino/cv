@@ -148,3 +148,19 @@ a {
     column-count: auto;
   }
 }
+
+/* ---------------------------------- Icons --------------------------------- */
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon-container {
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
