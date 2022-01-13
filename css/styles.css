@@ -1,8 +1,8 @@
 @import "./normalize.css";
 :root {
-  --color-primary: #ff1e41;
-  --color-secondary: #ce334a;
-  --color-accent: #ff5a1e;
+  --color-primary: #0373ff;
+  --color-secondary: #6aa1ff;
+  --color-accent: #0049cb;
   --color-headings: #000;
   --color-body: #fff;
 }
@@ -161,30 +161,55 @@ a {
   width: 36px;
 }
 
+@media screen and (max-width: 500px) {
+  .icon-container {
+    justify-content: flex-start;
+  }
+}
+
 /* ---------------------------------- Grid ---------------------------------- */
 .grid {
   display: grid;
   grid-template-columns: 8fr 20fr 1fr;
   height: 100vh;
+  overflow: hidden;
   width: 100vw;
 }
 
 .left {
+  display: flex;
+  flex-direction: column;
   grid-area: 1 / 1 / 2 / 2;
+  justify-content: flex-start;
+  max-width: 300px;
   padding-top: 8rem;
+  padding: 8rem 4rem;
 }
 .center {
+  background: var(--color-primary);
+  display: flex;
+  flex-direction: column;
   grid-area: 1 / 2 / 2 / 3;
+  overflow-y: scroll;
+  padding-left: 2rem;
   padding-top: 8rem;
 }
 .right {
+  background: var(--color-primary);
   grid-area: 1 / 3 / 2 / 4;
   padding-top: 8rem;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 @media screen and (max-width: 500px) {
   .grid {
-    grid-template-columns: 3fr 12fr;
+    grid-template-columns: 1fr 12fr;
+  }
+  .center {
+    padding-right: 0.8rem;
   }
   .right {
     display: none;
@@ -192,14 +217,6 @@ a {
 }
 
 /* ---------------------------------- Title --------------------------------- */
-.left {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 300px;
-  padding: 8rem 4rem;
-}
-
 .title {
   align-items: flex-end;
   display: flex;
@@ -219,23 +236,23 @@ a {
 }
 
 .decoration__line {
-  background: gold;
+  background: var(--color-primary);
+  border-style: none;
   flex-grow: 0;
-  height: 15rem;
+  height: 20rem;
   margin-block-end: 0;
   margin-block-start: 0;
   transform: rotate(180deg);
-  width: 0.3rem;
+  width: 0.4rem;
 }
 
 @media screen and (max-width: 500px) {
   .left {
-    padding: 0.5rem 0.5rem 0 0;
+    padding: 8rem 0.3rem 0 0.3rem;
   }
 
   .title__decoration {
-    height: 100%;
-    padding-left: 0;
+    display: none;
   }
 
   .decoration__line {
@@ -324,4 +341,22 @@ a {
   .contact__data {
     margin-right: 0;
   }
+}
+
+/* --------------------------------- Skills --------------------------------- */
+.center > * {
+  margin-bottom: 5rem;
+}
+
+.center:last-child {
+  margin-bottom: 0;
+}
+
+/* -------------------------------- Education ------------------------------- */
+.experience {
+  display: flex;
+}
+
+.experience__description {
+  margin: 0;
 }
