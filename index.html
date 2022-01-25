@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./icons/title-icon.png">
+    <title>Pablo Pastorino</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/fonts.css">
@@ -13,28 +16,29 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body class="grid">
     <div class="left">
-        <div class="title">
-            <h1 class="title__name">PABLO PASTORINO</h1>
-            <h3 class="title__description">PROGRAMADOR & CONTADOR</h3>
+        <div class="title" data-aos="fade-down">
+            <h1 class="title__name"><span class="spread-word">PABLO</span> <span class="spread-word">PASTORINO</span>
+            </h1>
+            <h3 class="title__description">CONTADOR & DESARROLLADOR</h3>
             <div class="title__decoration">
                 <hr class="decoration__line">
             </div>
         </div>
-        <div class="person__description">
+        <div class="person__description" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="750">
             <div class="image__container"><img class="description__image" src="./images/double_quotes..svg"
                     alt="Why should you hire me"></div>
-            <p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam, et
-                aliquid ea
-                veritatis voluptates at pariatur nostrum! Placeat, repellendus.</p>
+            <p class="description__text">Enfocado en la productividad del equipo, la eficiencia del proceso y el
+                valor del producto.</p>
         </div>
     </div>
     <div class="center">
         <div class="contact__section">
-            <p class="section-title">CONTACTO</p>
+            <p class=" section-title">CONTACTO</p>
             <div class="contact__data">
                 <p class="section__description">Hipólito Yrigoyen 661, Piso 10</p>
                 <p class="section__description">B8000 Bahia Blanca,</p>
@@ -65,57 +69,495 @@
 
             </div>
         </div>
-        <div class="skills">
-            <p class="section-title">HABILIDADES</p>
-            <ul class="list">
-                <li class="list__item list__image">Diseño Grafico</li>
-                <li class="list__item list__image">Diseño Web</li>
-                <li class="list__item list__image">Market Research</li>
-                <li class="list__item list__image">Project Management</li>
-                <li class="list__item list__image">UI/UX Design</li>
-                <li class="list__item list__image">SEO/SEM</li>
-            </ul>
-        </div>
         <div class="education__section">
             <p class="section-title">EDUCACION</p>
-            <p class="section-subtitle">Contador Público Nacional</p>
-            <p class="section-dates">2005-2012</p>
-            <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, doloribus
-                ea quia
-                nam
-                velit facere alias non
-                voluptatibus molestias aliquid.</p>
-            <p class="section-subtitle">Contador Público Nacional</p>
-            <p class="section-dates">2005-2012</p>
-            <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, doloribus
-                ea quia
-                nam
-                velit facere alias non
-                voluptatibus molestias aliquid.</p>
-            <p class="section-subtitle">Contador Público Nacional</p>
-            <p class="section-dates">2005-2012</p>
-            <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, doloribus
-                ea quia
-                nam
-                velit facere alias non
-                voluptatibus molestias aliquid.</p>
+            <div class="diploma">
+                <p class="section-subtitle">Certified Tech Developer</p>
+                <p class="section-description">Digital House - Mercado Libre - Globant</p>
+                <p class="section-dates">2021 - actualidad</p>
+                <p class="section-description">Modalidad online</p>
+            </div>
+            <div class="diploma">
+                <p class="section-subtitle">Experto Universitario en PHP y MySQL</p>
+                <p class="section-description">Universidad Tecnológica Nacional</p>
+                <p class="section-dates">2020 - 2021</p>
+                <p class="section-description">Modalidad online</p>
+            </div>
+            <div class="diploma">
+                <p class="section-subtitle">Contador Público</p>
+                <p class="section-description">Universidad Nacional del Sur</p>
+                <p class="section-dates">2006 - 2013</p>
+                <p class="section-description">Bahía Blanca</p>
+            </div>
         </div>
         <div class="experiencia">
             <p class="section-title">EXPERIENCIA</p>
-            <p class="section-subtitle">Estudio Contable Rivera</p>
-            <p class="section-dates">mar 2003 a dic 2008</p>
-            <div class="experience">
-                <span class="list__item list__image"></span>
-                <p class="experience__description">Hacía algunos trabajitos lindos de procesamiento de datos y
-                    mandados.
-                </p>
+            <div class="job">
+                <p class="section-subtitle">Analista Contable Impositivo</p>
+                <p class="section-dates">Estudio Contable Rivera</p>
+                <p class="section-dates"> jul 2018 may 2021</p>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Preparación y presentación de liquidaciones tributarias.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Información y asesoramiento sobre marco normativo regulatorio vigente en
+                        materia contable. societaria, tributaria y laboral.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Atención a las fiscalizaciones de los distintos organismos de
+                        recaudación.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Altas, bajas y modificaciones de relaciones laborales. Liquidación de
+                        haberes, obligaciones con la seguridad social y aportes sindicales.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Control y conciliación de cuentas patrimoniales.
+                    </p>
+                </div>
+
+
 
             </div>
+            <div class="job">
+                <p class="section-subtitle">Inversor Bursátil</p>
+                <p class="section-dates">Independiente</p>
+                <p class="section-dates">feb 2018 a la actualidad</p>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Análisis del precio de los instrumentos
+                        negociados en los
+                        principales mercados
+                        internacionales de acciones, bonos, divisas, índices y commodities</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Backtesting y fordward testing de los patrones del precio para
+                        determinar la existencia de ventaja estadística de la hipótesis estratégica.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Analisis de la acción del precio: orígenes, secuencias,
+                        movimientos,
+                        niveles, estructuras, zonas, validaciones y escenarios.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Identificación de las señales de operaciones de cada estrategia y
+                        técnica predefinidas.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Colocación de órdenes en el mercado, determinando el precio de
+                        entrada, salida y tamaño las
+                        mismas según el riesgo por operación, definido en la estrategia.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Gestión de las operaciones abiertas segun el plan de cada entrada
+                        al
+                        mercado.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Análisis y comparación de indicadores macroeconómicos: PBIs; COT;
+                        políticas monetarias y tasas de interés; mercados laborales y commodities.</p>
+                </div>
+            </div>
+            <div class="job">
+                <p class="section-subtitle">Coordinador Regional de Recursos Humanos</p>
+                <p class="section-dates">Bayton - Patagonia</p>
+                <p class="section-dates">ago 2015 a nov 2017</p>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Planificación de recursos humanos, identificando las necesidades y
+                        elaborando el plan para su satisfacción.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Supervisión del proceso de reclutamiento y selección de personal
+                        de
+                        las sucursales en Bahía Blanca, Neuquén, Comodoro Rivadavia, Las Heras, Rio
+                        Gallegos y Rio Grande.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Asistencia a los responsables de cada filial en el encuadramiento
+                        de
+                        los colaboradores en el convenio de trabajo y categoría profesional correspondiente. Con
+                        colaboradores encuadrados en
+                        más de 25 convenios, colectivos y de empresa.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Soporte y control de las liquidaciones de las
+                        distintas
+                        sucursales, del personal eventual y tercerizado. Contando con una dotación promedio de 600
+                        colaboradores</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Seguimiento y evaluación de los KPIs del área.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Planificación y ejecución de las actividades de onboarding, inducción y
+                        capacitaciones del personal interno de cada una de las dependencias.
+                        Con
+                        un total de 30 colabradores internos.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Elaboración y análisis de las cuentas de la región. Detectando desvíos y
+                        medidas correctivas a adoptar
+                        evaluando por región, sucursal y cliente.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Control y aprobación de las erogaciones y sus
+                        respectivas rendiciones de cada una de las seis sucursales.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Reclutamiento y selección del personal interno del área de
+                        recursos
+                        humanos, según las necesidades de dotación detectadas.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Coordinacion de lo concerniente a la programación de las
+                        vacaciones del personal interno del área en cada una de las sucursales. </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Verificación de las liquidaciones por egresos, emisión del
+                        certificado de ley y
+                        realizacióno de acuerdos y trámites en el ministerio. Promediando las 50 altas, bajas y
+                        modificaciones mensuales en la región.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Participación directa en la atención y solución de los reclamos
+                        sindicales de toda la región. Y en la construcción de una relación fluida y constructiva con los
+                        sindicatos con mayor dotación.</p>
+                </div>
+            </div>
+            <div class="job">
+                <p class="section-subtitle">Analista de Recursos Humanos</p>
+                <p class="section-dates">Bayton - Bahía Blanca</p>
+                <p class="section-dates">jul 2014 a jul 2015</p>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Búsqueda y selección de personal: relevamiento exhaustivo del
+                        perfil
+                        idóneo, reclutamiento, selección de currículums, entrevistas personales, evaluación de los
+                        candidatos para la posterior presentación al cliente y seguimiento de las
+                        incorporaciones.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Registro de altas, bajas y modificaciones de las condiciones de
+                        los
+                        colaboradores, en AFIP y asociaciones sindicales pertinentes. Contando con personal encuadrado
+                        en más de 10 convenios colectivos.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Liquidación de haberes, gestinando novedades distribuidas en más
+                        de 15 clientes. Y posterior liquidación de aportes y contribuciones sindicales.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Creación y actualización de legajos del personal, tanto físicos
+                        como
+                        digitales.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Manejo del presupuesto del sector.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Confección de la planificación anual de la agencia, identificando
+                        necesidades de plantilla, tanto propias como de los clientes actuales y potenciales.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Asistencia al área central de Legales, en el cálculo de
+                        indemnizaciones por
+                        despido y cotejo del tenor de las misivas con los sucesos pertinentes.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Informe al area comercial en los haberes a percibir según el
+                        convenio
+                        aplicable a la empresa usuaria para el posterior presupuesto de los servicios.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Gestión de accidentes laborales, in itinere y enfermedades
+                        profesionales. Denuncia y
+                        presentación del formulario informativo base para la liquidación de prestaciones dinerarias.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Preparación y presentación de documentación exigida por las
+                        empresas tercerizadoras (ART, Seguro de Vida, F931, etc.)</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Apertura de cuenta sueldo o asociación de CBU de cada
+                        incorporación a
+                        la empresa.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Emisión de recibos de sueldo: impresión y entrega de los recibos
+                        a
+                        más de 100 colaboradores, satisfaciendo las dudas expuestas.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Aprobación y liquidación de anticipos.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Control de asistencia del personal joronalizado y mensualizado.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Elaboración del calendario de vacaciones para los colaboradores
+                        de
+                        los
+                        distintos clientes. Asegurando la continuidad de las labores y evitando la conflictividad.</p>
+                </div>
+            </div>
+            <div class="job">
+                <p class="section-subtitle">Administrador</p>
+                <p class="section-dates">Pizza Break & Manjares del Cheff - Bahía Blanca</p>
+                <p class="section-dates">jun 2009 a ago 2013</p>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Verificación de adherencia de las tareas a las metodologías
+                        definidas en el manual de operaciones para asegurar la calidad. Sirviendo un promedio de 140
+                        órdenes diarias.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Desarrollo de proveedores y gestión de stock.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Administracion de personal, compuesto por 12 colaboradores.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Convenios con instituciones educativas para el desarrollo de pasantías y
+                        prácticas profesionales.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Gestor de fondos, para cancelación de costos, gastos y dotaciones
+                        a
+                        los locales de disponibilidad de efectivo.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Declaración y presentación de declaraciones juradas de impuestos
+                        nacionales, provinciales y tasas municipales. </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Liquidación de haberes, aportes y contribuciones sindicales y a
+                        la
+                        seguridad social.</p>
+                </div>
+            </div>
+            <div class="job">
+                <p class="section-subtitle">Auxiliar Contable</p>
+                <p class="section-dates">Estudio Contable Rivera - Ciudad de Oriente</p>
+                <p class="section-dates">mar 2006 a abr 2009</p>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Recolección y preparación de documentación soporte para la
+                        contabilización de actividades y liquidación de tributos para más de 70 clientes.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Presentación de declaraciones juradas correspondientes al
+                        Impuesto a
+                        los Ingresos Brutos. Anticipos mensuales, bimestrales y liquidación del período anual.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Liquidación del impuesto al valor agregado para más de 30
+                        clientes.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Diligencias en dependencias impositivas, entidades financieras y
+                        demás
+                        entes gubernamentales reguladores.</p>
+                </div>
+            </div>
+            <div class="job">
+                <p class="section-subtitle">Asesor de Ventas</p>
+                <p class="section-dates">Agencia Oficial Claro y Personal - Tres Arroyos</p>
+                <p class="section-dates">mar 2004 a dic 2005</p>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Asistencia a clientes sobre los dispositios y
+                        tecnologías de comunicación móvil. Cumpliendo el objetivo de ventas de 100 unidades mensuales.
+                    </p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Organización de productos en exhibición según sus márgenes de
+                        contribución, demanda y promociones vigentes.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Gestión de inventario en el depósito, con registro en sistema de
+                        los
+                        ingresos.</p>
+                </div>
+                <div class="task">
+                    <span class="list__item list__image"></span>
+                    <p class="task_description">Solución de quejas y reclamos técnicos y económicos de clientes y
+                        usuarios.</p>
+                </div>
+            </div>
         </div>
+
+        <div class="certifications-and-courses">
+            <p class="section-title">CERTIFICACIONES & CURSOS</p>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-git"></i> The Ultimate Git Course</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">11/2021</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fas fa-user-graduate"></i> Scrum Fundamentals Certified</p>
+                <p class="section-description">Scrum Study</p>
+                <p class="section-dates">09/2021</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-docker"></i> The Ultimate Docker Course</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">08/2021</p>
+            </div>
+
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-html5"></i> The Ultimate HTML5 & CSS Series</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">08/2021</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-react"></i> Mastering React</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">03/2021</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-node-js"></i> The Complete Node.js Course</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">01/2021</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-js"></i> The Ultimate JavaScript Series</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">12/2020</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-python"></i> Complete Python Mastery</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">10/2020</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fas fa-database"></i> Complete SQL Mastery</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">09/2020</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-java"></i> The Ultimate Java Part 3: Advanced Topics</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">09/2020</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-java"></i> The Ultimate Java Part 2: Object-oriented
+                    Programming</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">08/2020</p>
+            </div>
+
+            <div class="course">
+                <p class="section-subtitle"><i class="fab fa-java"></i> The Ultimate Java Part 1: Fundamentals</p>
+                <p class="section-description">Code With Mosh</p>
+                <p class="section-dates">07/2020</p>
+            </div>
+            <div class="course">
+                <p class="section-subtitle"><i class="fas fa-user-graduate"></i> XXIX Jornadas Universitarias de
+                    Contabilidad</p>
+                <p class="section-description">Universidad Nacional del Sur</p>
+                <p class="section-dates">10/2008</p>
+            </div>
+        </div>
+        <div class="skills">
+            <p class="section-title">HABILIDADES</p>
+            <ul class="list">
+                <li class="list__item list__image">Programador Full Stack</li>
+                <li class="list__item list__image">Design Thinking</li>
+                <li class="list__item list__image">Desarrollo de Proyectos</li>
+                <li class="list__item list__image">Testing</li>
+                <li class="list__item list__image">Lógico y Pragmático</li>
+                <li class="list__item list__image">Satisfacción al Cliente</li>
+                <li class="list__item list__image">Gestión Contable e Impositiva</li>
+                <li class="list__item list__image">Administración Financiera</li>
+                <li class="list__item list__image">Optimización Operativa</li>
+                <li class="list__item list__image">Empatía y Negociación</li>
+            </ul>
+        </div>
+        <div class="languages">
+            <p class="section-title">IDIOMAS</p>
+            <ul class="list">
+                <li class="list__item list__image"><span class="highlighted">Español</span> - Nativo</li>
+                <li class="list__item list__image"><span class="highlighted">Inglés</span> - B2 Intermedio Alto
+                    (FCE)</li>
+                <li class="list__item list__image"><span class="highlighted">Portugués</span> - B1 Intermedio</li>
+                <li class="list__item list__image"><span class="highlighted">Italiano</span> - A2 Elemental</li>
+            </ul>
+        </div>
+
+    </div>
     </div>
     <div class="right">
-        <h2>WWW.PABLOPASTORINO.COM</h2>
+        <h2>CONTADOR & DESARROLLADOR</h2>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+
 </body>
 
 </html>

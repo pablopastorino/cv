@@ -1,18 +1,14 @@
 @import "./normalize.css";
 :root {
-  --color-primary: #0373ff;
-  --color-secondary: #6aa1ff;
-  --color-accent: #0049cb;
-  --color-headings: #000;
+  --color-primary: #adddf7; /*0373ff complementarioo  ffa770*/
+  --color-secondary: #edae87;
   --color-body: #fff;
 }
-
-*,
+adddf7 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-
 /* ------------------------------- Typography ------------------------------- */
 html {
   font-size: 62.5%;
@@ -24,6 +20,7 @@ body {
   font-family: gilroy, "Open Sans", sans-serif;
   font-size: 1.6rem;
   height: 100vh;
+  width: 199vw;
 }
 
 img {
@@ -39,7 +36,7 @@ h3 {
 }
 
 h1 {
-  font-size: max(6vh, 7rem);
+  font-size: 6rem;
   line-height: 0.85;
   word-break: break-word;
 }
@@ -74,12 +71,17 @@ h3 {
 .section-description {
   font-size: 1.7rem;
   line-height: 1.6;
+  margin-block-end: 0;
   margin-top: 0;
+}
+
+.highlighted {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 874px) {
   h1 {
-    font-size: max(6vh, 4rem);
+    font-size: 4rem;
   }
   h2 {
     font-size: 3rem;
@@ -91,7 +93,7 @@ h3 {
 
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: max(6vh, 3rem);
+    font-size: 3rem;
   }
   h2 {
     font-size: 2.3rem;
@@ -99,6 +101,22 @@ h3 {
   h3 {
     font-size: 1.6rem;
   }
+}
+
+@media screen and (max-height: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+/* -------------------------------- Selection ------------------------------- */
+::selection {
+  color: var(--color-primary);
+  background: #000;
+}
+
+::-moz-selection {
+  color: var(--color-primary);
+  background: #000;
 }
 
 /* ---------------------------------- Links --------------------------------- */
@@ -110,14 +128,15 @@ a {
 
 /* ---------------------------------- Lists --------------------------------- */
 .list {
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
   list-style: none;
   padding-left: 0;
 }
 
 .list .list__item {
+  margin-bottom: 1rem;
   margin-right: 3rem;
 }
 
@@ -177,6 +196,7 @@ a {
 }
 
 .left {
+  align-items: center;
   display: flex;
   flex-direction: column;
   grid-area: 1 / 1 / 2 / 2;
@@ -216,6 +236,16 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .left {
+    padding-left: 12.5rem;
+  }
+  .center {
+    padding-left: 15rem;
+    padding-right: 7rem;
+  }
+}
+
 /* ---------------------------------- Title --------------------------------- */
 .title {
   align-items: flex-end;
@@ -224,7 +254,10 @@ a {
 
 .title__name {
   text-align: justify;
-  word-wrap: break-word;
+}
+
+.spread-word {
+  display: block;
 }
 
 .title__description {
@@ -236,7 +269,7 @@ a {
 }
 
 .decoration__line {
-  background: var(--color-primary);
+  background: var(--color-secondary);
   border-style: none;
   flex-grow: 0;
   height: 20rem;
@@ -249,6 +282,10 @@ a {
 @media screen and (max-width: 500px) {
   .left {
     padding: 8rem 0.3rem 0 0.3rem;
+  }
+
+  .spread-word {
+    display: initial;
   }
 
   .title__decoration {
@@ -271,23 +308,32 @@ a {
 }
 
 .description__text {
+  font-size: 1.8rem;
+  font-weight: bold;
   margin: 0;
 }
 
 .image__container {
   border-radius: 100%;
-  width: 80%;
+  height: 7rem;
+  width: 6rem;
 }
 
 .description__image {
   left: -10%;
   position: relative;
-  top: 20%;
+  top: 35%;
   transform: rotate(180deg);
 }
 
 @media screen and (max-width: 500px) {
   .title__description,
+  .person__description {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 500px) {
   .person__description {
     display: none;
   }
@@ -320,7 +366,7 @@ a {
 
 .section__description {
   align-items: center;
-  color: var(--color-headings);
+  color: #000;
   display: flex;
 }
 
@@ -353,10 +399,81 @@ a {
 }
 
 /* -------------------------------- Education ------------------------------- */
-.experience {
+.task {
   display: flex;
 }
 
-.experience__description {
+.task_description {
   margin: 0;
+}
+
+.diploma {
+  margin-top: 5rem;
+}
+
+.diploma > .section-dates {
+  margin-bottom: 0;
+}
+
+.diploma > * {
+  margin-top: 1rem;
+}
+
+/* ------------------------ Certifications & Courses ------------------------ */
+.certifications-and-courses .section-dates {
+  margin-top: 0;
+}
+
+.course {
+  margin-top: 4rem;
+}
+
+.course > * {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.course > .section-dates {
+  margin-top: 1rem;
+}
+
+.section-subtitle > i {
+  font-size: 1.4em;
+  margin-right: 0.6rem;
+}
+
+/* ------------------------------- Experience ------------------------------- */
+.job {
+  margin-top: 4rem;
+}
+
+.job > *,
+.job > .task:first-of-type {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.job > .task {
+  margin-top: 0;
+}
+
+.task_description {
+  line-height: 3rem;
+}
+
+.task_description {
+  line-height: 3rem;
+}
+
+.task .list__item.list__image {
+  padding-top: 0.5rem;
+}
+
+/* -------------------------------- Languages ------------------------------- */
+@media screen and (max-width: 874px) {
+  .languages .list {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
 }
